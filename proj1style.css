@@ -31,27 +31,65 @@ html{
 .left-nav-con{
     display: flex;
     align-items: center;
+    margin-left: 5rem;
+    flex-wrap: nowrap;
+    border-width: 3px;
+    transition: 0.2s;
 }
 
 .right-nav-con{
     display: flex;
     align-items: center;
+    margin-right: 5rem;
+    flex-wrap: nowrap;
+    transition: 0.2s;
 }
 
 .nav1{
     margin-left: 2rem;
+    
+}
+
+.nav2{
+    
 }
 
 .nav-link{
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     color: var(--text-color);
+    border-width: 1px;
+    border-color: transparent;
+    border-style:solid;
+    
+    
 }
+
+.nav-link:hover{
+    
+    
+    
+    
+    background-color: rgb(208, 197, 238);
+    transition: .3s;
+    border-width:1px;
+    padding: 0.5rem 1rem;
+    border-radius: 100rem;
+    border-color:transparent;
+    border-style:groove;
+}
+
 
 .nav-button{
     background-color: var(--primary-color);
     padding: 0.5rem 1rem;
     color: white;
     border-radius: 1rem;
+}
+
+.nav-button:hover{
+    background-color: black;
+    transition: 0.3s;
+
 }
 
 /*site header end*/
