@@ -223,20 +223,24 @@ h4 {
     background-color: rgb(247, 240, 255);
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-weight: 450;
 }
 
 .int-description{
     text-align: center;
-    max-width: 35rem;
+    max-width: 42rem;
     margin: auto;
     color: var(--text-color);
     font-weight: 400;
     margin-bottom: 4rem;
+    font-size: 1.2rem;
 }
 .int-container-1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
     margin-bottom: 4rem;
     
 }
@@ -244,6 +248,8 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
     margin-bottom: 4rem;
     
 }
@@ -272,4 +278,52 @@ h4 {
     border:1px rgb(223, 223, 223) solid;
     border-radius: 1rem;
     padding: 0.25rem;
+}
+
+/* -----------------------integration section end------------------------ */
+
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    background-color: aliceblue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+
+}
+
+.detail1{
+    text-align: center;
+}
+.detail-value{
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 450;
+}
+.detail-name{
+    font-size: 1.2rem;
+    font-weight: 430;
+}
+
+.features-img{
+    position: relative;
+    overflow:auto;
+    
+
+}
+.pc-img{
+    max-width: 60%;
+    max-height: 861px;
+    position: absolute;
+    left: 25%;
+}
+.phone-img{
+    max-width:17% ;
+    max-height: 661px;
+    position: relative;
+    left: 20%;
+    top: 40px;
 }
