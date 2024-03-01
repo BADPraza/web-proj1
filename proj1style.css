@@ -267,3 +267,9 @@ h4 {
 .int-item-name{
     font-weight: 430;
 }
+
+.int-img{
+    border:1px rgb(223, 223, 223) solid;
+    border-radius: 1rem;
+    padding: 0.25rem;
+}
