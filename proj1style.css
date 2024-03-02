@@ -189,7 +189,7 @@ h4 {
     border-width: 0.75rem;
     background-color: white;
     border-radius: 100%;
-    z-index: 1;
+    
 }
 
 .line-pattern-image {
@@ -197,6 +197,7 @@ h4 {
     top: -150px;
     left: 95%;
     width: 200px;
+    z-index: -1;
 }
 .chart-container{
     display: flex;
@@ -238,10 +239,12 @@ h4 {
 .int-container-1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 80%;
+    justify-content: space-between;
+    max-width: 70rem;
+    max-height: 40rem;
     margin: auto;
     margin-bottom: 4rem;
+    
     
 }
 .int-container-2{
@@ -256,6 +259,7 @@ h4 {
 
 .int-items{
     text-align: center;
+    padding-bottom: 2rem;
     
 }
 .int-p{
@@ -310,7 +314,7 @@ h4 {
 
 .features-img{
     position: relative;
-    overflow:auto;
+    
     
 
 }
