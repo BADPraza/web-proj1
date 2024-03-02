@@ -236,15 +236,13 @@ h4 {
     margin-bottom: 4rem;
     font-size: 1.2rem;
 }
-.int-container-1{
+.int-container-1, .feat-item-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 70rem;
-    max-height: 40rem;
+    justify-content: space-evenly;
+    max-width: 80%;
     margin: auto;
     margin-bottom: 4rem;
-    
     
 }
 .int-container-2{
@@ -259,7 +257,6 @@ h4 {
 
 .int-items{
     text-align: center;
-    padding-bottom: 2rem;
     
 }
 .int-p{
@@ -286,6 +283,8 @@ h4 {
 
 /* -----------------------integration section end------------------------ */
 
+
+/* -------------------------details and features section start-------------------- */
 .details{
     display: flex;
     justify-content: space-evenly;
@@ -314,6 +313,7 @@ h4 {
 
 .features-img{
     position: relative;
+    margin-bottom: 13rem;
     
     
 
@@ -330,4 +330,175 @@ h4 {
     position: relative;
     left: 20%;
     top: 40px;
+}
+
+.feat-img{
+    padding-bottom: 1rem;
+}
+
+/* -------------------------details and features section end-------------------- */
+
+/* -------------------------pricing section start-------------------- */
+
+}
+.basic-price-container{
+    display: flex;
+    align-items: flex-start;
+    height: 1rem;
+    align-self: center;
+    flex-wrap: wrap;
+    
+    
+}
+.dollar-sign{
+    font-size: 2rem;
+    padding-top: 2rem;
+    align-self:flex-start;
+    margin-top: -1rem;
+    vertical-align: top;
+    
+}
+.per-month{
+    font-size: 1rem;
+    margin-top:1rem;
+    color: var(--text-color);
+    font-weight: 450;
+}
+.value{
+    margin: 0.1rem;
+    font-size: 3rem;
+}
+
+.basic-header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 2rem;
+    
+}
+.plan-features{
+    max-width: 100%;
+    padding: 2rem;
+    border-top: 1px rgb(194, 193, 193) solid;
+    border-bottom: 1px rgb(194, 193, 193) solid;
+    
+}
+
+.basic-feature-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.feature-list{
+    list-style-type: none;
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+.feature-list li::before{
+    content: url('img/done.png');
+    vertical-align: middle;
+    margin-right: 1rem;
+    opacity: 60%;
+}
+
+
+.plan-get-started{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+
+.get-started-button{
+    background-color: rgb(131, 83, 207);
+    text-decoration: none;
+    margin: 0;
+    margin-top: ;
+    margin-bottom: ;
+    width: 80% ;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    text-align:center ;
+    color: white;
+    font-weight: 400;
+    font-size: 1.4rem;
+    
+    
+    
+
+
+    
+}
+
+.basic-plan{
+    display: flex;
+    flex-direction:column;
+    border:1px rgb(194, 193, 193) solid;
+    flex-grow: 1;
+    box-shadow: 0 0 5px rgba(92, 91, 91, 0.5);
+    border-radius: 1rem;
+    
+}
+.plans-main-container{
+    display:flex ;
+    justify-content:space-between ;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    
+    
+}
+
+.bh2{
+    font-weight: 500;
+}
+.bp{
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.ph2{
+    font-size: 1.7rem;
+    font-weight: 430;
+    
+}
+
+.pp{
+    color: var(--text-color);
+    font-weight: 400;
+
+}
+
+#ppspan{
+    font-weight: 500;
+    color: black;
+
+}
+
+#popular{
+    border: 1px rgb(196, 171, 243) solid;
+    padding: 0.1rem 0.6rem;
+    border-radius: 1rem;
+    background-color: rgb(247, 240, 255);
+    color: var(--primary-color);  
+    font-weight: 450;
+    font-size: 1rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+    
+}
+
+.feature-list-item{
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
