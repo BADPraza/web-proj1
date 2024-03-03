@@ -576,6 +576,7 @@ h4 {
     justify-content: space-between;
     padding-bottom: 1rem;
     font-weight: 450;
+    transition: 0.2s;
 
 }
 
@@ -593,11 +594,18 @@ h4 {
     position: relative;
     transition: 0.5s;
 }
-
 .question-link i{
     font-size: 2rem;
     color: var(--text-color);
+    transition: 0.2s;
 }
+
+.question-link:hover ,.question-link i:hover{
+    color: rgb(158, 158, 158);
+    transition: 0.2s;
+}
+
+
 .question-link .ion-md-close-circle-outline{
     display: none;
 }
