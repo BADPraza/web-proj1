@@ -46,6 +46,10 @@ h4 {
     top: 0;
     background-color: aliceblue;
     z-index: 1;
+    border-bottom: 1px rgb(253, 230, 230) solid;
+    box-shadow: 0 0 10px rgba(92, 91, 91, 0.7);
+    
+    
 }
 .site-header a{
     text-decoration: none;
@@ -80,13 +84,14 @@ h4 {
     border-width: 1px;
     border-color: transparent;
     border-style:solid;
+    transition: 0.3s;
     
     
 }
 
 .nav-link:hover{   
     background-color: rgb(208, 197, 238);
-    transition: .3s;
+    transition: 0.3s;
     border-width:1px;
     padding: 0.5rem 1rem;
     border-radius: 100rem;
@@ -100,6 +105,7 @@ h4 {
     padding: 0.5rem 1rem;
     color: white;
     border-radius: 1rem;
+    transition: 0.3s;
 }
 
 .nav-button:hover{
@@ -123,11 +129,18 @@ h4 {
     padding-right: 1rem;
     text-align: center;
     color: white;
+    box-shadow: 0 0 10px rgba(39, 35, 35, 0.7);
 }
+
+.hero-shadow{
+    text-shadow: 3px 3px black;
+}
+
 .hero-input {
     border-radius: 0.5rem;
     border-width: 0;
     padding: 0.5rem 1rem;
+    box-shadow: 0 0 7px rgba(43, 39, 39, 0.7);
 }
 .hero-button {
     border-radius: 0.5rem;
@@ -135,22 +148,37 @@ h4 {
     padding: 0.5rem 1rem;
     background-color: var(--primary-color);
     color: white;
+    transition: 0.2s;
+    box-shadow: 0 0 7px rgba(43, 39, 39, 0.7);
+    
+    
 }
 
 .hero-button:hover{
     background-color: black;
     cursor: pointer;
+    transition: 0.3s;
 }
 .hero-form {
     margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
 }
 .hero-privacy {
     font-size: 0.825rem;
     font-weight: 300;
+    
 }
 .hero-privacy a {
     color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.01rem;
+    transition: 0.2s;
+    text-shadow: 3px 3px black;
+}
+.hero-privacy a:hover{
+    color: rgb(170, 162, 243);
+    transition: 0.3s;
 }
 .hero-description {
     max-width: 39rem;
@@ -251,7 +279,7 @@ h4 {
     justify-content: space-evenly;
     max-width: 80%;
     margin: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
     
 }
 
@@ -270,6 +298,12 @@ h4 {
 .int-links{
     text-decoration: none;
     color: var(--primary-color);
+    transition: 0.2s;
+}
+
+.int-links:hover{
+    color: rgb(173, 144, 250);
+    transition: 0.2s;
 }
 .int-item-name{
     font-weight: 430;
@@ -290,7 +324,7 @@ h4 {
     justify-content: space-evenly;
     max-width: 80%;
     margin: auto;
-    background-color: aliceblue;
+    background-color: rgb(249, 243, 255);
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-radius: 1rem;
@@ -334,6 +368,10 @@ h4 {
 
 .feat-img{
     padding-bottom: 1rem;
+}
+
+.feat-item-container{
+    margin-bottom: 7rem;
 }
 
 /* -------------------------details and features section end-------------------- */
@@ -429,12 +467,12 @@ h4 {
     color: white;
     font-weight: 400;
     font-size: 1.4rem;
-    
-    
-    
+    transition: 0.2s;
+}
 
-
-    
+.get-started-button:hover{
+    background-color: rgb(80, 15, 184);
+    transition: 0.2s;
 }
 
 .basic-plan{
@@ -452,13 +490,14 @@ h4 {
     width: 80%;
     margin: auto;
     gap: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
     
     
 }
 
 .bh2{
     font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 .bp{
     font-weight: 400;
@@ -499,6 +538,250 @@ h4 {
 .feature-list-item{
     font-weight: 400;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+}
+
+/* ----------------------pricing section end-------------------------- */
+
+/* ----------------------------FAQ section start---------------------------- */
+
+.faq-questions-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 4rem
+}
+
+.questions-main-container{
+    width: ;
+    padding: ;
+}
+
+.question{
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border-bottom: 1px rgb(219, 218, 218) solid;
+}
+
+.question-link{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    font-weight: 450;
+
+}
+
+
+.answer-p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.answer{
+    width: 80%;
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+
+.question-link ion-icon{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.question-link .close-icon{
+    display: none;
+}
+
+.question:target .answer{
+    max-height: 5rem;
+}
+
+.question:target .question-link .add-icon{
+    display: none;
+}
+
+.question:target .question-link .close-icon{
+    display: block;
+}
+
+#question6{
+    border: none;
+}
+
+
+.still-have-questions{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(249, 243, 255);
+    padding: 4rem 3rem;
+    margin-bottom: 7rem;
+    border-radius: 1rem;
+
+}
+
+.shq-img{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.shq-heading{
+    text-align: center;
+    font-weight: 450;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.shq-p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.git-button{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 400;
+    background-color: rgb(131, 83, 207);
+    width: 12rem;
+    height: 3rem;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    border-radius: 1rem;
+    transition: 0.2s;
+}
+
+.git-button:hover{
+    background-color: rgb(80, 15, 184);
+    transition: 0.2s;
+}
+
+/* ----------------------FAQ section end------------------------------ */
+
+/* -----------------------------trusted companies and website links lists section start---------------------- */
+
+.trust{
+    max-width: 80%;
+    margin: auto;
+    background-color:rgb(249, 243, 255);
+    padding: 3rem;
+    margin-bottom: 7rem;
+    border-radius: 1rem;
+}
+
+.com-p{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 430;
+    font-size: 1.5rem;
+
+
+}
+
+.company-logos{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+
+
+.detail-links-section{
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+
+}
+.app-link-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+
+.product-links-list{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+    
+}
+
+.links-list-heading{
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.detail-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 450;
+    color: rgb(118, 49, 230);
+    transition: 0.2s;
+}
+
+.detail-link:hover{
+    color: rgb(43, 10, 95);
+    transition: 0.2s;
+}
+
+.detail-link span{
+    font-size:0.8rem;
+    margin-left: 0.5rem;
+    border: 1px var(--primart-color-dark) solid;
+    border-radius: 1rem;
+    padding: 0.2rem 0.8rem;
+    
+}
+
+/* ------------------------trusted companies and website links lists section end----------------------- */
+
+/*------------footer------------------*/
+
+.footer{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+.copyright{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    text-shadow: 1px 3px rgb(235, 226, 226);
+    
+}
+
+.footer-border{
+    border-top: 1px rgb(226, 226, 226) solid;
+    box-shadow: 0 0 10px 0  rgba(92, 91, 91, 0.7);
+    height: 7rem;
 }
