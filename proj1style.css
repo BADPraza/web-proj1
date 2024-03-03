@@ -594,11 +594,11 @@ h4 {
     transition: 0.5s;
 }
 
-.question-link ion-icon{
+.question-link i{
     font-size: 2rem;
     color: var(--text-color);
 }
-.question-link .close-icon{
+.question-link .ion-md-close-circle-outline{
     display: none;
 }
 
@@ -606,11 +606,11 @@ h4 {
     max-height: 5rem;
 }
 
-.question:target .question-link .add-icon{
+.question:target .question-link .ion-md-add-circle-outline{
     display: none;
 }
 
-.question:target .question-link .close-icon{
+.question:target .question-link .ion-md-close-circle-outline{
     display: block;
 }
 
